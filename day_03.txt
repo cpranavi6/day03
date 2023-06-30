@@ -1,0 +1,97 @@
+1. For the given JSON iterate over all for loops (for, for in, for of, forEach)
+
+var person = [{"fname":"John", "lname":"Doe", "age":25} , {"fname":"Joseph", "lname":"Doe", "age":28}];
+  
+    //for loop:
+      for (var i=0; i<person.length; i++) {
+      console.log(person[i]);
+      }
+
+        //Output:   { fname: 'John', lname: 'Doe', age: 25 } { fname: 'Joseph', lname: 'Doe', age: 28 }
+
+    //for-in loop:
+      for (var i in person) {
+      console.log(person[i]);
+      }
+
+        //Output:   { fname: 'John', lname: 'Doe', age: 25 } { fname: 'Joseph', lname: 'Doe', age: 28 }
+
+    //for of loop:
+      for (const key of person) {
+      console.log(key);
+      }
+
+        //Output:   { fname: 'John', lname: 'Doe', age: 25 } { fname: 'Joseph', lname: 'Doe', age: 28 }
+
+    //forEach loop:
+      person.forEach(function(key) {
+      console.log(key.fname, key.lname);
+      });
+
+        //Output:   John Doe  Joseph Doe         
+2. Create your own resume data in JSON format
+  {
+      "basic": {
+        "name": "pranavi",
+        "label": "Full Stack Developer",
+        "email": "chintapranavi@gmail.com",
+        "phone": "+91 7386000126",
+        "location": {
+          "address": "Q.no-53B, Pranahitha Colony, Mandamarri",
+          "postalCode": "504231",
+          "city": "Mancherial",
+          "state": "Telangana",
+          "country": "India"
+        },
+        "profiles": [
+          {
+            "network": "Instagram",
+            "username": "_pranavi.gupta",
+            "url": "https://www.instagram.com/pranavi.gupta/"
+          }
+        ]
+      },
+      "work": [
+        {
+          "name": "wipro",
+          "position": "project engineer",
+          "Location": "hyderabad",
+          "url": "https://https:mywipro.com",
+          "startDate": "2021-06-23",
+          "endDate": "2022-08-24",
+          "summary": "Description…",
+          "highlights": [""]
+        }
+      ],
+      "education": [
+        {
+          "institution": "bhojreddy engineering college",
+          "url": "Na",
+          "area": "electronic and communication engineer ",
+          "studyType": "Btech",
+          "startDate": "2017-07-1",
+          "endDate": "2021-08-25",
+          "score": "82%",
+          
+        }
+      ],
+      "skills": [
+        {
+          "name": "Web Development",
+          "level": "Beginner",
+          "keywords": ["HTML", "CSS", "JavaScript"]
+        }
+      ],
+      "languages": [
+        {
+          "language": "English",
+          "fluency": "Intermediate"
+        }
+      ],
+      "interests": [
+        {
+          "name1": "Video Games",
+          "name2": "Reading Books"
+        }
+      ]
+    }    
