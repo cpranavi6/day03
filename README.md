@@ -1,5 +1,5 @@
 # day03
-How to compare two JSON have the same properties without order?
+1)How to compare two JSON have the same properties without order?
       var obj1 = { name: "Person 1", age:5 };
       var obj2 = { age:5, name: "Person 1" };
       var same=true;
@@ -19,7 +19,8 @@ How to compare two JSON have the same properties without order?
       }
       console.log(`Properties are equal : ${same}`);
       //Prints: Properties are equal : true
-Use the rest countries API url -> https://restcountries.eu/rest/v2/all and display all the country flags in console.
+      
+2)Use the rest countries API url -> https://restcountries.eu/rest/v2/all and display all the country flags in console.
       var request = new XMLHttpRequest();
       request.open('GET','https://raw.githubusercontent.com/rvsp/restcountries-json-data/master/res-countries.json');
       request.send();
@@ -31,7 +32,7 @@ Use the rest countries API url -> https://restcountries.eu/rest/v2/all and displ
           }
       }
 
-Use the same rest countries and print all countries name, region, sub region and population.
+3)Use the same rest countries and print all countries name, region, sub region and population.
  var request = new XMLHttpRequest();
       request.open('GET','https://raw.githubusercontent.com/rvsp/restcountries-json-data/master/res-countries.json');
       request.send();
@@ -65,6 +66,7 @@ Swapping 2 numbers;
       
       // Prints : 15625
 6. Display the asterisk pattern as shown below(No loop needed):
+   
 *****
 *****
 *****
@@ -76,6 +78,7 @@ Swapping 2 numbers;
       console.log(s);
       console.log(s);
       console.log(s);
+      
 7. Calculate electricity bill? For example, a consumer consumes 100 watts per hour daily for one month. Calculate the total energy bill of that consumer if per unit rate is 10?
     let consumed_units = 100;
     let total_consumedUnits = (consumed_units*24*30)/1000;
@@ -83,7 +86,8 @@ Swapping 2 numbers;
     console.log(total_cost)
     
     // Prints : 720
-8. var myarray = [11,22,33,44,55]. write a code to count the elements in the array. Don’t use length property.
+   
+9. var myarray = [11,22,33,44,55]. write a code to count the elements in the array. Don’t use length property.
     var a = [11,22,33,44,55];
     function arrayLength(a){
     var length = 0;
@@ -95,7 +99,9 @@ Swapping 2 numbers;
     console.log(arrayLength(a));
     
     // Prints : 5
-9. Write a loop that makes seven calls to console.log to output the following triangle:
+   
+11. Write a loop that makes seven calls to console.log to output the following triangle:
+
 #
 ##
 ###
@@ -104,11 +110,13 @@ Swapping 2 numbers;
 ######
 #######
 
+
     let triangle = "#"
     do {
     console.log(triangle);
     triangle = triangle + "#";
     } while (triangle.length !== 8);
+    
 10. Iterate through the string array and print it contents
     var strArray= ["<option>Jazz</option>","<option>Blues</option>","<option>New Age</option>","<option>Classical</option>","<option>Opera</option>"]
     for( let i=0; i<strArray.length; i++) {
@@ -116,13 +124,15 @@ Swapping 2 numbers;
     }
     
     // Output: Jazz Blues New Age Classical Opera
-11. Starting from the existing friends variable below, change the element that is currently “Mari” to “Munnabai”.
+    
+12. Starting from the existing friends variable below, change the element that is currently “Mari” to “Munnabai”.
     let friends = ['Mari','MaryJane','CaptianAmerica','Munnabai','Jeff','AAK chandran'];
     friends.splice(0,1,"Munnabai")
     console.log(friends);
     
     // Prints : [ 'Munnabai', 'MaryJane', 'CaptianAmerica', 'Munnabai', 'Jeff', 'AAK chandran' ]
-12. Starting from the friends variable below, Loop and Print the names till you meet CaptianAmerica.
+    
+14. Starting from the friends variable below, Loop and Print the names till you meet CaptianAmerica.
     let friends = ['Mari','MaryJane','CaptianAmerica','Munnabai','Jeff','AAK chandran'];
     for (let i=0; i<friends.length; i++){
         if(friends[i] === "CaptianAmerica"){
@@ -132,7 +142,7 @@ Swapping 2 numbers;
     }
     
     // Prints : Mari MaryJane
-13. Concat all the names the friends array and return as comma “,” seperated string.
+15. Concat all the names the friends array and return as comma “,” seperated string.
     let friends1 = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
     let friends2 = ["Gabbar","Rajinikanth","Mass","Spiderman","Jeff","ET"];
     console.log(`${friends1},${friends2}`)
